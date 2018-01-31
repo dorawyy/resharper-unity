@@ -2,7 +2,7 @@ package com.jetbrains.rider.plugins.unity.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
-import com.jetbrains.rider.plugins.unity.ProjectCustomDataHost
+import com.jetbrains.rider.plugins.unity.RdUnityHost
 import com.jetbrains.rider.plugins.unity.util.UnityIcons
 import com.jetbrains.rider.util.idea.application
 
@@ -11,6 +11,6 @@ class RefreshInUnityAction() : AnAction("Refresh", "Starts refresh in Unity", Un
         val project = e.project?: return
 
         application.saveAll()
-        ProjectCustomDataHost.CallBackendRefresh(project)
+        RdUnityHost.CallBackendRefresh(project)
     }
 }

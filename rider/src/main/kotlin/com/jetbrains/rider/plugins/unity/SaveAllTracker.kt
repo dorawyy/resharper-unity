@@ -27,7 +27,7 @@ class SaveAllTracker(project: Project, val actionManagerEx: ActionManagerEx) : L
             super.afterActionPerformed(action, dataContext, event)
 
             if ((action is SaveAllAction || action is SaveDocumentAction)) {
-                ProjectCustomDataHost.CallBackendRefresh(project)
+                RdUnityHost.CallBackendRefresh(project)
             }
         }
     }

@@ -74,3 +74,4 @@ resharper/src/resharper-unity/Unity3dRider/Assets/Plugins/Editor/JetBrains/Rider
 resharper/src/resharper-unity/Unity3dRider/Packages/manifest.json
 resharper/test/Unity3dRiderCompileTest/.idea/*
 resharper/test/Unity3dRiderCompileTest/packages/*
+rider/lib/.rdgen

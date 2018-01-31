@@ -222,7 +222,7 @@ task buildUnity3dRider {
         def outputPath = new File(backend.backendRoot, "src/resharper-unity/Unity3dRider/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Repacked.dll")
         if (outputPath.isFile() && outputPath.exists())
         {
-            logger.lifecycle("deleting $outputhPath")
+            logger.lifecycle("deleting $outputPath")
             assert outputPath.delete()
         }
 
