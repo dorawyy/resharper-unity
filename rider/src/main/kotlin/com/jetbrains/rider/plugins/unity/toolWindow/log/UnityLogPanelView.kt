@@ -26,6 +26,7 @@ class UnityLogPanelView(project: Project, val model: UnityLogPanelModel, project
         addListSelectionListener {
             console.clear()
             if (selectedIndex >= 0) {
+                console.print(selectedValue.message+"\n", ConsoleViewContentType.NORMAL_OUTPUT)
                 console.print(selectedValue.stackTrace, ConsoleViewContentType.NORMAL_OUTPUT)
                 console.scrollTo(0)
             }
